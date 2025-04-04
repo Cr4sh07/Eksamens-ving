@@ -4,8 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            margin: 0;
+        }
+        .navbar {
+            background-color: #333;
+            padding: 10px 0;
+        }
+
+    </style>
 </head>
 <body>
-    
+    <div class="navbar">
+        <a href="#" onclick="showTab('home')">Homepage</a>
+        <a href="#" onclick="showTab('instructions')">Instructions</a>
+    </div>
+
+    <div id="home" class="content active">
+        <h1>Github</h1>
+        <h2>Hvorfor laste opp med github?</h2>
+        <p>Fordi..</p>
+    </div>
+
+    <div id="instructions" class="content">
+        <h1>Instruksjoner</h1>
+        <p>Tutorial</p>
+    </div>
 </body>
 </html>
