@@ -30,23 +30,50 @@
         .navbar a:hover {
             background-color: #555;
         }
+        .instructions-img {
+            max-width: 80%;
+            height: auto;
+            margin: 20px 0;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        }
     </style>
 </head>
 <body>
     <div class="navbar">
-        <a href="#" onclick="showTab('home')">Homepage</a>
-        <a href="#" onclick="showTab('instructions')">Instructions</a>
+        <a href="#" onclick="showTab('Hjemmeside')">Hjemmeside</a>
+        <a href="#" onclick="showTab('Instruksjoner')">Instruksjoner</a>
     </div>
 
-    <div id="home" class="content active">
+    <div id="Hjemmeside" class="content active">
         <h1>Github</h1>
         <h3>Hvorfor laste opp med github?</h3>
-        <p>Fordi..</p>
+        <p>1. Versjonskontroll: GitHub lar deg spore endringer i koden og gå tilbake til tidligere versjoner.</p>
+        <p>2. Samarbeid: Enkel deling og samarbeid med andre utviklere via pull requests og grener.</p>
+        <p>3. Sikkerhetskopiering: Koden er lagret eksternt, så du mister ikke fremgang hvis noe skjer med maskinen din.</p>
+        <p>4. Åpen kildekode: Du kan dele prosjektet ditt og få bidrag fra andre.</p>
+        <p>5. Automatisering: Bruk GitHub Actions og CI/CD for automatisk testing og distribusjon.</p>
+        <p>6. Portefølje: Bygg et profesjonelt rykte ved å vise frem prosjektene dine.</p>
+        <p>7. Feilhåndtering: Organiser og spor feil og oppgaver med "Issues".</p>
+        <p>8. Fellesskap: Lær av andre utviklere og få tilbakemelding på koden din.</p>
     </div>
 
-    <div id="instructions" class="content">
+    <div id="Instruksjoner" class="content">
         <h1>Instruksjoner</h1>
-        <p>Tutorial</p>
+        <h3>Hvordan man laster opp kode til GitHub repository</h3>
+        <p>Steg 1:</p>
+        <img src="Screenshot 2025-04-04 at 09.36.08.png" alt="Step 1" class="instruksjoner-img">
+        
+        <p>Steg 2:</p>
+        <img src="Screenshot 2025-04-04 at 09.38.54.png" alt="Step 2" class="instruksjoner-img">
+
+        <p>Steg 3:</p>
+        <img src="Screenshot 2025-04-04 at 09.40.12.png" alt="Step 3" class="instruksjoner-img">
+
+        <p>Steg 4:</p>
+        <img src="Screenshot 2025-04-04 at 09.41.47.png" alt="Step 4" class="instruksjoner-img">
+
+        <p>Steg 5:</p>
     </div>
     <script>
         function showTab(id) {
