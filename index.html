@@ -15,7 +15,13 @@
             background-color: #333;
             padding: 10px 0;
         }
-
+        .content {
+            display: none;
+            padding: 20px;
+        }
+        .active {
+            display: block;
+        }
     </style>
 </head>
 <body>
@@ -34,5 +40,11 @@
         <h1>Instruksjoner</h1>
         <p>Tutorial</p>
     </div>
+    <script>
+        function showTab(id) {
+            document.querySelectorAll('.content').forEach(c => c.classList.remove('active'));
+            document.getElementById(id).classList.add('active');
+        }
+    </script>
 </body>
 </html>
